@@ -1,0 +1,296 @@
+
+
+
+
+
+
+
+
+#header{
+    .group-top{
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .group-bottom{
+        height: 119px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .logo{
+        display: flex;
+        margin-right: 70px;
+        content: '';
+        width: 105px;
+        height: 27px;
+        background: url(../images/spbg-1.png) no-repeat -5px -165px;
+        margin-bottom: 10px;
+    }
+    .gnb{
+        display: flex;
+        .list{
+            display: flex;
+            gap: 20px;
+            a{
+                font-size: 16px;
+                height: 48px;
+                line-height: 48px;
+                font-weight: 700;
+                display: block;
+                &:hover{
+                    color: #2292e9;
+                }
+            }
+        }
+    }
+    .util-area{
+        .list{
+            display: flex;
+            gap: 20px;
+            
+            a{
+                font-size: 14px;
+                height: 48px;
+                line-height: 48px;
+                font-weight: 700;
+                display: block;
+                &:hover{
+                    color: #2292e9;
+                }
+            }
+        }        
+    }
+    .slogun-area{
+        content: '';
+        width: 133px;
+        height: 51px;
+        background: url(../images/slogun.png);
+    }
+    .search-area{
+        margin-top: 30px;
+        margin-left: 60px;
+        transform: translateY(-50%);
+        right: 400px;
+        width: 520px;
+        height: 42px;
+        border: 3px solid #2292e9;
+        box-sizing: border-box;
+        display: flex;
+        .img-area{
+            background: url(../images/search.png) no-repeat 0 0;
+            width: 133px;
+            height: 51px;
+            position: absolute;
+            left: -250px;
+        }
+        form{
+            flex: 1;
+            fieldset{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                border: none;
+                .input{
+                    flex: 1;
+                    height: 100%;
+                    border:none;
+                    outline: none;
+                    padding-left: 10px;
+                    color: #767676;
+                    &::placeholder{
+                        color: #2292e9;
+                    }
+                }
+                .btn-keyboard{
+                    width: 40px;
+                    height: 16px;
+                    content: '';
+                    background: url(../images/btn-keyboard.png) no-repeat center;
+                    
+                }
+                .btn-search{
+                    width: 36px;
+                    height: 36px;
+                    background: url(../images/spbg-1.png) no-repeat -32px -97px;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .weather-area{        
+        .group-weather{
+            display: flex;
+            margin-left: 20px;
+            white-space: nowrap;
+            .info-area{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .temp-wrap{
+                    margin-bottom: 8px;
+                }
+                .info{
+                    font-size: 16px;
+                }
+                .temp{
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+                .dust{
+                    font-size: 13px;
+                    .good{
+                        color: #0D6EFD;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .inner4{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 50px;
+    }
+    .brand-area{
+        padding-left: 30px;
+        a{
+            display: block;
+            width: 74px;
+            height: 47px;
+        }
+    }
+    .lang-area{
+        display: flex;
+        padding-bottom: 20px;
+        #langList{
+            width: 80px;
+            height: 21px;
+            border-color: #afcfea;
+            color: #1E6CB3;
+            font-size: 12px;
+            line-height: 21px;
+        }
+        .btn-lang{
+            width: 30px;
+            font-size: 11px;
+            color: #fff;
+            background-color: #1E6CB3;
+            border: 0;
+            height: 21px;
+            margin-left: -1px;
+            display: inline-block;
+            padding: 0;
+        }
+    }
+}
+
+
+
+#footer{
+    max-width: 1152px;
+    margin: 0 auto;
+    .ad-area{
+        padding: 50px 0;
+        .ad-wrap{
+            .list{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .control{
+            margin-top: 5px;
+            display: flex;
+            justify-content: end;
+            span{
+                margin-right: 5px;
+            }
+            [class*="btn-"]{
+                width: 20px;
+                height: 20px;
+                border: 1px solid #999;
+                background: url(../images/spbg-1.png) no-repeat;
+            }
+            .btn-prev{background-position:-45px -43px ;}
+            .btn-stop{background-position: -65px -43px;}
+            .btn-next{background-position: -86px -43px;}
+        }
+    }
+    
+    .group-link{
+        .list{
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            white-space: nowrap;
+            .item{
+                position: relative;
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                .link{
+                    font-size: 12px;
+                    color: #636363;
+                }
+                [class*="link-"]{
+                    font-size: 12px;
+                    color: #636363;
+                }
+                [class*="link-"]::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 1px;
+                    height: 14px;
+                    background: #dcdcdc;
+                }
+                .link-2{
+                    font-weight: 700;
+                    color: black;
+                }
+                .channel{
+                    content: '';
+                    width: 114px;
+                    height: 24px;
+                    background: url(../images/ft-link.png) no-repeat 0 -30px;
+                    margin-left: -20px;
+                }
+            }
+        }
+    }
+    .group-contact{
+        padding: 22px 0;
+        border-top: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        min-width: 1152px;
+        .flex{
+            display: flex;
+        }
+        .inquiry-area{
+            margin-right: 40px;
+            width: 108px;
+            height: 45px;
+            background: url(../images/spbg-1.png) no-repeat -180px 0;
+        }
+        .address-area{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            color: #636363;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+    }
+}
+
+
+
+
+
