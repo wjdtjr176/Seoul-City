@@ -2,7 +2,7 @@
 
 
 $('.btn-lang').click(function(){
-    url =$('#langList').val();
+    const url =$('#langList').val();
     
     window.open(url);
 })
@@ -10,7 +10,7 @@ $('.btn-lang').click(function(){
 
 
 $(window).scroll(function(){
-    curr = $(this).scrollTop();
+    let curr = $(this).scrollTop();
 
     if(curr > 0) {
         $('.fix-btn').addClass('on')
